@@ -78,6 +78,12 @@ public class Metoder extends JFrame{
         jp.add(centerPanel, BorderLayout.CENTER);
         jp.add(southPanel, BorderLayout.SOUTH);
     }
+    //Skapar metod för sätta layoten på norh panel
+    public void layoutNorthCenterPanel(){
+        northPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+        centerPanel.setLayout(new GridLayout(4, 4));
+        southPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+    }
 
 
 }
