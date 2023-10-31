@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.*;
+import java.util.ArrayList;
 
 public class Metoder extends JFrame{
     //Skapar upp Paneler
@@ -24,4 +26,58 @@ public class Metoder extends JFrame{
     JButton knappFjorton = new JButton("14");
     JButton knappFemton = new JButton("15");
     JButton knappSexton = new JButton(" ");
+
+    //Skapar upp 2 knappar för northPanel
+    JButton nyttSpel = new JButton("Nytt Spel");
+    JButton rättaSpel = new JButton("Rätta ditt spel");
+
+    //South panel
+    JLabel vinstMeddelande = new JLabel(" ");
+    JLabel antalVinster = new JLabel(" ");
+    Huvudkod h;
+
+//Skapar upp konstruktor för Meoder klassen
+    Metoder(Huvudkod h){
+        this.jp = h.jp;
+        this.northPanel = h.northPanel;
+        this.centerPanel = h.centerPanel;
+        this.southPanel = h.southPanel;
+        this.h=h;
+    }
+
+    //Skapar upp metod för att lägga till knappar i lista
+    public void läggaTillKnappar(ArrayList<JButton> knappLista, JPanel centerPanel){
+        for (int i = 0; i <knappLista.size() ; i++) {
+            JButton knapp = knappLista.get(i);
+            centerPanel.add(knapp);
+        }
+    }
+//Lägger till knappar i knappLista
+    public void skapaKnappar (ArrayList<JButton> knappLista){
+        knappLista.add(knappEtt);
+        knappLista.add(knappTvå);
+        knappLista.add(knappTre);
+        knappLista.add(knappFyra);
+        knappLista.add(knappFem);
+        knappLista.add(knappSex);
+        knappLista.add(knappSju);
+        knappLista.add(knappÅtta);
+        knappLista.add(knappNio);
+        knappLista.add(knappTio);
+        knappLista.add(knappElva);
+        knappLista.add(knappTolv);
+        knappLista.add(knappTretton);
+        knappLista.add(knappFjorton);
+        knappLista.add(knappFemton);
+        knappLista.add(knappSexton);
+    }
+    //Metod för att lägga till positionen för alla paneler
+    public void läggTillIJP(JPanel jp, JPanel northPanel, JPanel centerPanel, JPanel southPanel){
+        jp.setLayout(new BorderLayout());
+        jp.add(northPanel, BorderLayout.NORTH);
+        jp.add(centerPanel, BorderLayout.CENTER);
+        jp.add(southPanel, BorderLayout.SOUTH);
+    }
+
+
 }
