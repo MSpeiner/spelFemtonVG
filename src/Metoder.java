@@ -28,4 +28,17 @@ public class Metoder extends JFrame{
     //Skapar upp 2 knappar för northPanel
     JButton nyttSpel = new JButton("Nytt Spel");
     JButton rättaSpel = new JButton("Rätta ditt spel");
+
+    //South panel
+    JLabel vinstMeddelande = new JLabel(" ");
+    JLabel antalVinster = new JLabel(" ");
+    Huvudkod h;
+
+    Metoder(Huvudkod h){
+        this.jp = h.jp;
+        this.northPanel = h.northPanel;
+        this.centerPanel = h.centerPanel;
+        this.southPanel = h.southPanel;
+        this.h=h;
+    }
 }
