@@ -26,6 +26,9 @@ public class Huvudkod extends JFrame {
 
         //Skapar upp knappar för center
         m.läggaTillKnappar(knappLista, centerPanel);
+
+        //Knappar för south
+        m.setVinstMeddelande();
     }
 
         public static void main(String[] args) {
