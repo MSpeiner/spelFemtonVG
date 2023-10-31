@@ -45,6 +45,17 @@ public class Metoder extends JFrame{
         this.h=h;
     }
 
+    //Metod för att kolla om valda knappar befinner sig bredvid varandra eller inte
+    public boolean kontrolleraGranne(int indexEtt, int indexAndra) {
+        int antalRutor = 4;
+        int radEtt = indexEtt / antalRutor; // 0
+        int kolumnEtt = indexEtt % antalRutor; //2
+        int radTvå = indexAndra / antalRutor; //1
+        int kolumnTvå = indexAndra % antalRutor; //2
+
+        return Math.abs(radEtt - radTvå) + Math.abs(kolumnEtt - kolumnTvå) == 1;
+    }
+
     //Skapar upp metod för att lägga till knappar i lista
     public void läggaTillKnappar(ArrayList<JButton> knappLista, JPanel centerPanel){
         for (int i = 0; i <knappLista.size() ; i++) {
