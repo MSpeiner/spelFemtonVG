@@ -24,4 +24,8 @@ public class Metoder extends JFrame{
     JButton knappFjorton = new JButton("14");
     JButton knappFemton = new JButton("15");
     JButton knappSexton = new JButton(" ");
+
+    //Skapar upp 2 knappar för northPanel
+    JButton nyttSpel = new JButton("Nytt Spel");
+    JButton rättaSpel = new JButton("Rätta ditt spel");
 }
