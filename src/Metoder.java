@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.util.ArrayList;
 
 public class Metoder extends JFrame{
     //Skapar upp Paneler
@@ -34,6 +35,7 @@ public class Metoder extends JFrame{
     JLabel antalVinster = new JLabel(" ");
     Huvudkod h;
 
+//Skapar upp konstruktor för Meoder klassen
     Metoder(Huvudkod h){
         this.jp = h.jp;
         this.northPanel = h.northPanel;
@@ -41,4 +43,14 @@ public class Metoder extends JFrame{
         this.southPanel = h.southPanel;
         this.h=h;
     }
+
+    //Skapar upp metod för att lägga till knappar i lista
+    public void läggaTillKnappar(ArrayList<JButton> knappLista, JPanel centerPanel){
+        for (int i = 0; i <knappLista.size() ; i++) {
+            JButton knapp = knappLista.get(i);
+            centerPanel.add(knapp);
+        }
+    }
+
+
 }
