@@ -84,6 +84,16 @@ public class Metoder extends JFrame{
         centerPanel.setLayout(new GridLayout(4, 4));
         southPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
     }
+    //Skapar metod för att skapaKnappar till north panel
+    public void skapaKnapparNorthPanel(JButton nyttSpel, JButton rättaSpel){
+        northPanel.add(nyttSpel);
+        northPanel.add(rättaSpel);
+    }
+    //Skapar metod för vinstmeddelande
+    public void setVinstMeddelande(){
+        southPanel.add(vinstMeddelande);
+        southPanel.add(antalVinster);
+    }
 
 
 }
