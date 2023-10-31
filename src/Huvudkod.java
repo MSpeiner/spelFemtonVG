@@ -13,7 +13,22 @@ public class Huvudkod extends JFrame {
     //Skapar knappLista
     ArrayList<JButton> knappLista = new ArrayList<>();
 
-    public static void main(String[] args) {
+    Huvudkod() {
+        //Lägger till knappar till listan
+        m.skapaKnappar(knappLista);
+
+        //Skapar upp en ny lista som blir en kopia av knapplista
+        ArrayList<JButton> rättadKnappLista = new ArrayList<JButton>(knappLista);
+
+        //Skapar upp paneler & setLayout på "jp"
+        this.add(jp);
+        m.läggTillIJP(jp, northPanel, centerPanel, southPanel);
+
+        //Skapar upp knappar för center
+        m.läggaTillKnappar(knappLista, centerPanel);
+    }
+
+        public static void main(String[] args) {
         Huvudkod hk = new Huvudkod();
     }
 }
