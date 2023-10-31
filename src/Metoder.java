@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 
 public class Metoder extends JFrame{
@@ -69,6 +70,13 @@ public class Metoder extends JFrame{
         knappLista.add(knappFjorton);
         knappLista.add(knappFemton);
         knappLista.add(knappSexton);
+    }
+    //Metod för att lägga till positionen för alla paneler
+    public void läggTillIJP(JPanel jp, JPanel northPanel, JPanel centerPanel, JPanel southPanel){
+        jp.setLayout(new BorderLayout());
+        jp.add(northPanel, BorderLayout.NORTH);
+        jp.add(centerPanel, BorderLayout.CENTER);
+        jp.add(southPanel, BorderLayout.SOUTH);
     }
 
 
