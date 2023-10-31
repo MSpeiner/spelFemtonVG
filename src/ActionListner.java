@@ -11,6 +11,15 @@ public class ActionListner implements ActionListener {
     ArrayList<JButton> knappLista;
     JLabel vinstMeddelande;
     JPanel southPanel;
+
+    //Konstruktor för actionlistenerklassen
+    public ActionListner(ArrayList<JButton> rättadKnappLista, ArrayList<JButton> knappLista, JLabel vinstMeddelande, JPanel southPanel) {
+        this.rättadKnappLista = rättadKnappLista;
+        this.knappLista = knappLista;
+        this.vinstMeddelande = vinstMeddelande;
+        this.southPanel = southPanel;
+    }
+
 //Skapar en Actionperformed med en actionevent
     @Override
     public void actionPerformed(ActionEvent e) {
