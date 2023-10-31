@@ -1,5 +1,8 @@
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Huvudkod extends JFrame {
     //Skapar upp paneler Huvudkod
@@ -24,11 +27,31 @@ public class Huvudkod extends JFrame {
         this.add(jp);
         m.läggTillIJP(jp, northPanel, centerPanel, southPanel);
 
+        //North & Center Panel setLayout
+        m.layoutNorthCenterPanel();
+
+        //Skapar knappar för North
+        m.skapaKnapparNorthPanel(m.nyttSpel, m.rättaSpel);
+
         //Skapar upp knappar för center
         m.läggaTillKnappar(knappLista, centerPanel);
 
         //Knappar för south
         m.setVinstMeddelande();
+
+        //Actionlistener för NyttSpel knapp
+        m.nyttSpel.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Collections.shuffle(knappLista);
+                centerPanel.removeAll();
+                for (JButton knapp : knappLista) {
+                    centerPanel.add(knapp);
+                }
+                centerPanel.revalidate();
+                repaint();
+            }
+        });
     }
 
         public static void main(String[] args) {
