@@ -13,5 +13,8 @@ public class Huvudkod extends JFrame {
     //Skapar knappLista
     ArrayList<JButton> knappLista = new ArrayList<>();
 
-
+    public static void main(String[] args) {
+        Huvudkod hk = new Huvudkod();
+    }
 }
+
