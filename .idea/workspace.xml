@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6314ec6a-08ff-4031-9bad-b617da14f275" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ActionListner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ActionListner.java" afterDir="false" />
+    <list default="true" id="6314ec6a-08ff-4031-9bad-b617da14f275" name="Changes" comment="fixat">
       <change beforePath="$PROJECT_DIR$/src/Huvudkod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Huvudkod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Metoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Metoder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,14 +22,14 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Micke" />
+        <entry key="$PROJECT_DIR$" value="Master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2XWwUhcXshKi1DB3dDtFlMOwFHw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,7 +41,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Filip",
+    "git-widget-placeholder": "DevbranchM",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -76,5 +74,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="skapat branches" />
+    <MESSAGE value="fixat" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixat" />
   </component>
 </project>

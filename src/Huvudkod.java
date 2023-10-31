@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.util.ArrayList;
 
 public class Huvudkod extends JFrame {
     //Skapar upp paneler Huvudkod
@@ -6,4 +7,11 @@ public class Huvudkod extends JFrame {
     final static JPanel northPanel = new JPanel();
     final static JPanel centerPanel = new JPanel();
     final static JPanel southPanel = new JPanel();
+
+    //Skapar instans för metoder
+    Metoder m = new Metoder(this);
+    //Skapar knappLista
+    ArrayList<JButton> knappLista = new ArrayList<>();
+
+
 }
