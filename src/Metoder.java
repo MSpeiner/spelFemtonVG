@@ -51,6 +51,25 @@ public class Metoder extends JFrame{
             centerPanel.add(knapp);
         }
     }
+//Lägger till knappar i knappLista
+    public void skapaKnappar (ArrayList<JButton> knappLista){
+        knappLista.add(knappEtt);
+        knappLista.add(knappTvå);
+        knappLista.add(knappTre);
+        knappLista.add(knappFyra);
+        knappLista.add(knappFem);
+        knappLista.add(knappSex);
+        knappLista.add(knappSju);
+        knappLista.add(knappÅtta);
+        knappLista.add(knappNio);
+        knappLista.add(knappTio);
+        knappLista.add(knappElva);
+        knappLista.add(knappTolv);
+        knappLista.add(knappTretton);
+        knappLista.add(knappFjorton);
+        knappLista.add(knappFemton);
+        knappLista.add(knappSexton);
+    }
 
 
 }
