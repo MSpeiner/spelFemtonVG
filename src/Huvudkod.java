@@ -52,8 +52,37 @@ public class Huvudkod extends JFrame {
                 repaint();
             }
         });
-    }
 
+        //Action listener för samtliga knappar
+        final JButton[] FörstaTrycktaKnappen = {new JButton()};
+        for (int i = 0; i < knappLista.size(); i++) {
+            JButton trycktKnapp = knappLista.get(i);
+            trycktKnapp.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+                    if (FörstaTrycktaKnappen[0] == null) {
+                        FörstaTrycktaKnappen[0] = trycktKnapp;
+                    } else {
+                        if (FörstaTrycktaKnappen[0] == m.knappSexton || trycktKnapp == m.knappSexton) {
+                            int indexEtt = knappLista.indexOf(FörstaTrycktaKnappen[0]);
+                            int indexAndra = knappLista.indexOf(trycktKnapp);
+                            if (m.kontrolleraGranne(indexEtt, indexAndra)) {
+                                Collections.swap(knappLista, indexEtt, indexAndra);
+                                centerPanel.removeAll();
+                                for (JButton knapp : knappLista) {
+                                    centerPanel.add(knapp);
+                                }
+                                revalidate();
+                                repaint();
+                            }
+                            FörstaTrycktaKnappen[0] = null;
+                        }
+                    }
+                }
+            });
+        }
+        m.setstil();
+    }
         public static void main(String[] args) {
         Huvudkod hk = new Huvudkod();
     }
