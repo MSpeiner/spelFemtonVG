@@ -9,7 +9,7 @@ public class Huvudkod extends JFrame {
     final static JPanel southPanel = new JPanel();
 
     //Skapar instans för metoder
-    Metoder m = new Metoder();
+    Metoder m = new Metoder(this);
     //Skapar knappLista
     ArrayList<JButton> knappLista = new ArrayList<>();
 
