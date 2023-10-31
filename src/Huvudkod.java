@@ -53,6 +53,9 @@ public class Huvudkod extends JFrame {
             }
         });
 
+        //Anropar metoden rättaSpel (Actionlistener)
+        m.rättaSpel.addActionListener(new ActionListner(rättadKnappLista, knappLista, m.vinstMeddelande, southPanel));
+
         //Action listener för samtliga knappar
         final JButton[] FörstaTrycktaKnappen = {new JButton()};
         for (int i = 0; i < knappLista.size(); i++) {
