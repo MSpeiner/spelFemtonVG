@@ -94,6 +94,13 @@ public class Metoder extends JFrame{
         southPanel.add(vinstMeddelande);
         southPanel.add(antalVinster);
     }
+//Skapar metod för att sätta utsendet på programmet storlek osv..
+    public void setstil(){
+        h.setSize(700, 700);
+        h.setResizable(false);
+        h.setVisible(true);
+        h.setDefaultCloseOperation(EXIT_ON_CLOSE);
+    }
 
 
 }
