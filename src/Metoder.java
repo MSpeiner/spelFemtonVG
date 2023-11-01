@@ -57,9 +57,9 @@ public class Metoder extends JFrame{
     }
 
     //Skapar upp metod för att lägga till knappar i lista
-    public void läggaTillKnappar(ArrayList<JButton> knappLista, JPanel centerPanel){
-        for (int i = 0; i <knappLista.size() ; i++) {
-            JButton knapp = knappLista.get(i);
+    public void läggaTillKnappar(){
+        for (int i = 0; i <h.knappLista.size() ; i++) {
+            JButton knapp = h.knappLista.get(i);
             centerPanel.add(knapp);
         }
     }

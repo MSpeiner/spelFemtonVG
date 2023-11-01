@@ -34,7 +34,7 @@ public class Huvudkod extends JFrame {
         m.skapaKnapparNorthPanel(m.nyttSpel, m.rättaSpel);
 
         //Skapar upp knappar för center
-        m.läggaTillKnappar(knappLista, centerPanel);
+        m.läggaTillKnappar();
 
         //Knappar för south
         m.setVinstMeddelande();
