@@ -18,7 +18,7 @@ public class Huvudkod extends JFrame {
 
     Huvudkod() {
         //Lägger till knappar till listan
-        m.skapaKnappar(knappLista);
+        m.skapaKnappar();
 
         //Skapar upp en ny lista som blir en kopia av knapplista
         ArrayList<JButton> rättadKnappLista = new ArrayList<JButton>(knappLista);

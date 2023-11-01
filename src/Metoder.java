@@ -64,23 +64,23 @@ public class Metoder extends JFrame{
         }
     }
 //Lägger till knappar i knappLista
-    public void skapaKnappar (ArrayList<JButton> knappLista){
-        knappLista.add(knappEtt);
-        knappLista.add(knappTvå);
-        knappLista.add(knappTre);
-        knappLista.add(knappFyra);
-        knappLista.add(knappFem);
-        knappLista.add(knappSex);
-        knappLista.add(knappSju);
-        knappLista.add(knappÅtta);
-        knappLista.add(knappNio);
-        knappLista.add(knappTio);
-        knappLista.add(knappElva);
-        knappLista.add(knappTolv);
-        knappLista.add(knappTretton);
-        knappLista.add(knappFjorton);
-        knappLista.add(knappFemton);
-        knappLista.add(knappSexton);
+    public void skapaKnappar (){
+        h.knappLista.add(knappEtt);
+        h.knappLista.add(knappTvå);
+        h.knappLista.add(knappTre);
+        h.knappLista.add(knappFyra);
+        h.knappLista.add(knappFem);
+        h.knappLista.add(knappSex);
+        h.knappLista.add(knappSju);
+        h.knappLista.add(knappÅtta);
+        h.knappLista.add(knappNio);
+        h.knappLista.add(knappTio);
+        h.knappLista.add(knappElva);
+        h.knappLista.add(knappTolv);
+        h.knappLista.add(knappTretton);
+        h.knappLista.add(knappFjorton);
+        h.knappLista.add(knappFemton);
+        h.knappLista.add(knappSexton);
     }
     //Metod för att lägga till positionen för alla paneler
     public void läggTillIJP(JPanel jp, JPanel northPanel, JPanel centerPanel, JPanel southPanel){
