@@ -51,7 +51,7 @@ public class Metoder extends JFrame{
     public void läggaTillKnappar(){
         for (int i = 0; i <h.knappLista.size() ; i++) {
             JButton knapp = h.knappLista.get(i);
-            centerPanel.add(knapp);
+            h.centerPanel.add(knapp);
         }
     }
 //Lägger till knappar i knappLista
