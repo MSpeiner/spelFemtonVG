@@ -18,7 +18,7 @@ public class Huvudkod extends JFrame {
 
     Huvudkod() {
         //Lägger till knappar till listan
-        m.skapaKnappar(knappLista);
+        m.skapaKnappar();
 
         //Skapar upp en ny lista som blir en kopia av knapplista
         ArrayList<JButton> rättadKnappLista = new ArrayList<JButton>(knappLista);
@@ -34,7 +34,7 @@ public class Huvudkod extends JFrame {
         m.skapaKnapparNorthPanel(m.nyttSpel, m.rättaSpel);
 
         //Skapar upp knappar för center
-        m.läggaTillKnappar(knappLista, centerPanel);
+        m.läggaTillKnappar();
 
         //Knappar för south
         m.setVinstMeddelande();
