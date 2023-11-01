@@ -25,7 +25,7 @@ public class Huvudkod extends JFrame {
 
         //Skapar upp paneler & setLayout på "jp"
         this.add(jp);
-        m.läggTillIJP(jp, northPanel, centerPanel, southPanel);
+        m.läggTillIJP();
 
         //North & Center Panel setLayout
         m.layoutNorthCenterPanel();
