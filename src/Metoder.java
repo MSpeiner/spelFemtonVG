@@ -74,11 +74,11 @@ public class Metoder extends JFrame{
         knappLista.add(knappSexton);
     }
     //Metod för att lägga till positionen för alla paneler
-    public void läggTillIJP(JPanel jp, JPanel northPanel, JPanel centerPanel, JPanel southPanel){
-        jp.setLayout(new BorderLayout());
-        jp.add(northPanel, BorderLayout.NORTH);
-        jp.add(centerPanel, BorderLayout.CENTER);
-        jp.add(southPanel, BorderLayout.SOUTH);
+    public void läggTillIJP(){
+        h.jp.setLayout(new BorderLayout());
+        h.jp.add(h.northPanel, BorderLayout.NORTH);
+        h.jp.add(h.centerPanel, BorderLayout.CENTER);
+        h.jp.add(h.southPanel, BorderLayout.SOUTH);
     }
     //Skapar metod för sätta layoten på norh panel
     public void layoutNorthCenterPanel(){
