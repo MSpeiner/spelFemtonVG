@@ -87,7 +87,7 @@ public class Metoder extends JFrame{
         h.southPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
     }
     //Skapar metod för att skapaKnappar till north panel
-    public void skapaKnapparNorthPanel(JButton nyttSpel, JButton rättaSpel){
+    public void skapaKnapparNorthPanel(){
         h.northPanel.add(nyttSpel);
         h.northPanel.add(rättaSpel);
     }
@@ -103,6 +103,4 @@ public class Metoder extends JFrame{
         h.setVisible(true);
         h.setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
-
-
 }
