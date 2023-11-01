@@ -23,20 +23,23 @@ public class ActionListner implements ActionListener {
 //Skapar en Actionperformed med en actionevent
     @Override
     public void actionPerformed(ActionEvent e) {
+        boolean vinst = true;
         for (int i = 0; i < knappLista.size(); i++) {
             JButton kontrollKnapp = knappLista.get(i);
             JButton rättadListaKontrollknapp = rättadKnappLista.get(i);
 
-
-            if (kontrollKnapp.equals(rättadListaKontrollknapp)) {
-                vinstMeddelande.setText("Du har vunnit!");
-                southPanel.setBackground(Color.GREEN);
-            } else {
-                vinstMeddelande.setText("Du är inte klar, något stämmer inte");
-                southPanel.setBackground(Color.RED);
+            if (!kontrollKnapp.equals(rättadListaKontrollknapp)) {
+                vinst = false;
+                break;
             }
+        }
 
-
+        if (vinst) {
+            vinstMeddelande.setText("Du har vunnit!");
+            southPanel.setBackground(Color.GREEN);
+        } else {
+            vinstMeddelande.setText("Du är inte klar, något stämmer inte");
+            southPanel.setBackground(Color.RED);
         }
     }
 }
