@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6314ec6a-08ff-4031-9bad-b617da14f275" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Metoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Metoder.java" afterDir="false" />
+    <list default="true" id="6314ec6a-08ff-4031-9bad-b617da14f275" name="Changes" comment="Anropar metoden rättar spel(ActionListener)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +49,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Huvudkod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Huvudkod" />
+      <module name="spelFemtonVG" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Huvudkod" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,6 +73,105 @@
       <updated>1698758162748</updated>
       <workItem from="1698758163802" duration="673000" />
     </task>
+    <task id="LOCAL−00001" summary="Skapar upp paneler i metoder klassen">
+      <option name="closed" value="true" />
+      <created>1698760131986</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1698760131986</updated>
+    </task>
+    <task id="LOCAL−00002" summary="Skapar upp knappar i klassen metoder">
+      <option name="closed" value="true" />
+      <created>1698760230671</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1698760230671</updated>
+    </task>
+    <task id="LOCAL−00003" summary="Skapar upp 2 knappar för northPanel">
+      <option name="closed" value="true" />
+      <created>1698760895594</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1698760895594</updated>
+    </task>
+    <task id="LOCAL−00004" summary="South panel, samt skapar upp en konstruktor för metoder klassen">
+      <option name="closed" value="true" />
+      <created>1698761089022</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1698761089022</updated>
+    </task>
+    <task id="LOCAL−00005" summary="Skapar upp metod för att lägga till knappar i lista">
+      <option name="closed" value="true" />
+      <created>1698761227543</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1698761227543</updated>
+    </task>
+    <task id="LOCAL−00006" summary="Lägger till knappar i knappListan">
+      <option name="closed" value="true" />
+      <created>1698761334337</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1698761334337</updated>
+    </task>
+    <task id="LOCAL−00007" summary="Metod för att lägga till position till paneler">
+      <option name="closed" value="true" />
+      <created>1698761434251</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1698761434251</updated>
+    </task>
+    <task id="LOCAL−00008" summary="Skapar metod för sätta layoten på norh panel">
+      <option name="closed" value="true" />
+      <created>1698762912849</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1698762912849</updated>
+    </task>
+    <task id="LOCAL−00009" summary="Skapar metod för skapaknappar till north panel samt metod för vinsmeddelande">
+      <option name="closed" value="true" />
+      <created>1698763002539</created>
+      <option name="number" value="LOCAL−00009" />
+      <option name="presentableId" value="LOCAL−00009" />
+      <updated>1698763002539</updated>
+    </task>
+    <task id="LOCAL−00010" summary="Skapar metod för ändra utsende på spelet">
+      <option name="closed" value="true" />
+      <created>1698763075266</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1698763075266</updated>
+    </task>
+    <task id="LOCAL−00011" summary="Implements ActionListner, skapar upp listor, label,panel samt actionperformed">
+      <option name="closed" value="true" />
+      <created>1698764408830</created>
+      <option name="number" value="LOCAL−00011" />
+      <option name="presentableId" value="LOCAL−00011" />
+      <updated>1698764408830</updated>
+    </task>
+    <task id="LOCAL−00012" summary="Bygger upp actionperformed för att kontrollera om man vunnit eller ej">
+      <option name="closed" value="true" />
+      <created>1698764481940</created>
+      <option name="number" value="LOCAL−00012" />
+      <option name="presentableId" value="LOCAL−00012" />
+      <updated>1698764481940</updated>
+    </task>
+    <task id="LOCAL−00013" summary="Skapar konstruktor för ActionListner klassen">
+      <option name="closed" value="true" />
+      <created>1698764580378</created>
+      <option name="number" value="LOCAL−00013" />
+      <option name="presentableId" value="LOCAL−00013" />
+      <updated>1698764580378</updated>
+    </task>
+    <task id="LOCAL−00014" summary="Anropar metoden rättar spel(ActionListener)">
+      <option name="closed" value="true" />
+      <created>1698765161449</created>
+      <option name="number" value="LOCAL−00014" />
+      <option name="presentableId" value="LOCAL−00014" />
+      <updated>1698765161449</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,5 +187,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Skapar upp paneler i metoder klassen" />
+    <MESSAGE value="Skapar upp knappar i klassen metoder" />
+    <MESSAGE value="Skapar upp 2 knappar för northPanel" />
+    <MESSAGE value="South panel, samt skapar upp en konstruktor för metoder klassen" />
+    <MESSAGE value="Skapar upp metod för att lägga till knappar i lista" />
+    <MESSAGE value="Lägger till knappar i knappListan" />
+    <MESSAGE value="Metod för att lägga till position till paneler" />
+    <MESSAGE value="Skapar metod för sätta layoten på norh panel" />
+    <MESSAGE value="Skapar metod för skapaknappar till north panel samt metod för vinsmeddelande" />
+    <MESSAGE value="Skapar metod för ändra utsende på spelet" />
+    <MESSAGE value="Implements ActionListner, skapar upp listor, label,panel samt actionperformed" />
+    <MESSAGE value="Bygger upp actionperformed för att kontrollera om man vunnit eller ej" />
+    <MESSAGE value="Skapar konstruktor för ActionListner klassen" />
+    <MESSAGE value="Anropar metoden rättar spel(ActionListener)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Anropar metoden rättar spel(ActionListener)" />
   </component>
 </project>

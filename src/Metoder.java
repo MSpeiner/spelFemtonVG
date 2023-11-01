@@ -3,11 +3,6 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class Metoder extends JFrame{
-    //Skapar upp Paneler
-    JPanel jp;
-    JPanel northPanel;
-    JPanel centerPanel;
-    JPanel southPanel;
 
     //skapar upp 16 knappar för centerPanel
     JButton knappEtt = new JButton("1");
@@ -38,10 +33,6 @@ public class Metoder extends JFrame{
 
 //Skapar upp konstruktor för Meoder klassen
     Metoder(Huvudkod h){
-        this.jp = h.jp;
-        this.northPanel = h.northPanel;
-        this.centerPanel = h.centerPanel;
-        this.southPanel = h.southPanel;
         this.h=h;
     }
 
@@ -91,19 +82,19 @@ public class Metoder extends JFrame{
     }
     //Skapar metod för sätta layoten på norh panel
     public void layoutNorthCenterPanel(){
-        northPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
-        centerPanel.setLayout(new GridLayout(4, 4));
-        southPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+        h.northPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
+        h.centerPanel.setLayout(new GridLayout(4, 4));
+        h.southPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
     }
     //Skapar metod för att skapaKnappar till north panel
     public void skapaKnapparNorthPanel(JButton nyttSpel, JButton rättaSpel){
-        northPanel.add(nyttSpel);
-        northPanel.add(rättaSpel);
+        h.northPanel.add(nyttSpel);
+        h.northPanel.add(rättaSpel);
     }
     //Skapar metod för vinstmeddelande
     public void setVinstMeddelande(){
-        southPanel.add(vinstMeddelande);
-        southPanel.add(antalVinster);
+        h.southPanel.add(vinstMeddelande);
+        h.southPanel.add(antalVinster);
     }
 //Skapar metod för att sätta utsendet på programmet storlek osv..
     public void setstil(){
