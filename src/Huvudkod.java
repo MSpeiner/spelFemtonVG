@@ -39,7 +39,7 @@ public class Huvudkod extends JFrame {
         //Knappar för south
         m.setVinstMeddelande();
 
-        //Actionlistener för NyttSpel knapp
+        //Actionlistener för NyttSpel knapp shuffla lista
         m.nyttSpel.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -53,10 +53,8 @@ public class Huvudkod extends JFrame {
             }
         });
 
-        //Anropar metoden rättaSpel (Actionlistener)
-        m.rättaSpel.addActionListener(new ActionListner(this, rättadKnappLista));
 
-        //Action listener för samtliga knappar
+        //Action listener för samtliga knappar, hur och att knappar kan röra sig
         final JButton[] FörstaTrycktaKnappen = {new JButton()};
         for (int i = 0; i < knappLista.size(); i++) {
             JButton trycktKnapp = knappLista.get(i);
@@ -84,6 +82,8 @@ public class Huvudkod extends JFrame {
                 }
             });
         }
+        //Anropar metoden rättaSpel (Actionlistener)
+        m.rättaSpel.addActionListener(new ActionListner(this, rättadKnappLista));
         m.setstil();
     }
         public static void main(String[] args) {

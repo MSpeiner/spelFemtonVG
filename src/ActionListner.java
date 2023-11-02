@@ -15,7 +15,8 @@ public class ActionListner implements ActionListener {
         this.rättadKnappLista=rättadKnappLista;
     }
 
-//Skapar en Actionperformed med en actionevent
+//Skapar en Actionperformed med en actionevent jämför våra 2 listor
+    //För att se om de är vinst eller inte, jämför knappar i rätt ordning inte inehållet av knappar
     @Override
     public void actionPerformed(ActionEvent e) {
         boolean vinst = true;
