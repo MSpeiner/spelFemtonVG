@@ -28,23 +28,14 @@ public class Metoder extends JFrame{
 
     //South panel
     JLabel vinstMeddelande = new JLabel(" ");
-    JLabel antalVinster = new JLabel(" ");
+
+    //Skapar Huvudkod h
     Huvudkod h;
+
 
 //Skapar upp konstruktor för Meoder klassen
     Metoder(Huvudkod h){
         this.h=h;
-    }
-
-    //Metod för att kolla om valda knappar befinner sig bredvid varandra eller inte
-    public boolean kontrolleraGranne(int indexEtt, int indexAndra) {
-        int antalRutor = 4;
-        int radEtt = indexEtt / antalRutor; // 0
-        int kolumnEtt = indexEtt % antalRutor; //2
-        int radTvå = indexAndra / antalRutor; //1
-        int kolumnTvå = indexAndra % antalRutor; //2
-
-        return Math.abs(radEtt - radTvå) + Math.abs(kolumnEtt - kolumnTvå) == 1;
     }
 
     //Skapar upp metod för att lägga till knappar i lista
@@ -54,6 +45,7 @@ public class Metoder extends JFrame{
             h.centerPanel.add(knapp);
         }
     }
+
 //Lägger till knappar i knappLista
     public void skapaKnappar (){
         h.knappLista.add(knappEtt);
@@ -73,6 +65,7 @@ public class Metoder extends JFrame{
         h.knappLista.add(knappFemton);
         h.knappLista.add(knappSexton);
     }
+
     //Metod för att lägga till positionen för alla paneler
     public void läggTillIJP(){
         h.jp.setLayout(new BorderLayout());
@@ -80,23 +73,37 @@ public class Metoder extends JFrame{
         h.jp.add(h.centerPanel, BorderLayout.CENTER);
         h.jp.add(h.southPanel, BorderLayout.SOUTH);
     }
+
     //Skapar metod för sätta layoten på norh panel
     public void layoutNorthCenterPanel(){
         h.northPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
         h.centerPanel.setLayout(new GridLayout(4, 4));
         h.southPanel.setLayout(new FlowLayout(FlowLayout.CENTER));
     }
+
     //Skapar metod för att skapaKnappar till north panel
     public void skapaKnapparNorthPanel(){
         h.northPanel.add(nyttSpel);
         h.northPanel.add(rättaSpel);
     }
+
     //Skapar metod för vinstmeddelande
     public void setVinstMeddelande(){
         h.southPanel.add(vinstMeddelande);
-        h.southPanel.add(antalVinster);
     }
-//Skapar metod för att sätta utsendet på programmet storlek osv..
+
+    //Metod för att kolla om valda knappar befinner sig bredvid varandra eller inte
+    public boolean kontrolleraGranne(int indexEtt, int indexAndra) {
+        int antalRutor = 4;
+        int radEtt = indexEtt / antalRutor; // 0
+        int kolumnEtt = indexEtt % antalRutor; //2
+        int radTvå = indexAndra / antalRutor; //1
+        int kolumnTvå = indexAndra % antalRutor; //2
+
+        return Math.abs(radEtt - radTvå) + Math.abs(kolumnEtt - kolumnTvå) == 1;
+    }
+
+//Skapar metod för att sätta utsendet på programmet storlek osv
     public void setstil(){
         h.setSize(700, 700);
         h.setResizable(false);
