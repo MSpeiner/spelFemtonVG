@@ -6,26 +6,21 @@ import java.util.ArrayList;
 
 //Klassen Actionlistener implementerar ifrån AtctionListener
 public class ActionListner implements ActionListener {
-    //Skapar upp 2 Arraylist av typen JButton, samt 1 label och 1 Jpanel
+    Huvudkod h;
     ArrayList<JButton> rättadKnappLista;
-    ArrayList<JButton> knappLista;
-    JLabel vinstMeddelande;
-    JPanel southPanel;
 
     //Konstruktor för actionlistenerklassen
-    public ActionListner(ArrayList<JButton> rättadKnappLista, ArrayList<JButton> knappLista, JLabel vinstMeddelande, JPanel southPanel) {
-        this.rättadKnappLista = rättadKnappLista;
-        this.knappLista = knappLista;
-        this.vinstMeddelande = vinstMeddelande;
-        this.southPanel = southPanel;
+    public ActionListner(Huvudkod h, ArrayList<JButton> rättadKnappLista) {
+        this.h=h;
+        this.rättadKnappLista=rättadKnappLista;
     }
 
 //Skapar en Actionperformed med en actionevent
     @Override
     public void actionPerformed(ActionEvent e) {
         boolean vinst = true;
-        for (int i = 0; i < knappLista.size(); i++) {
-            JButton kontrollKnapp = knappLista.get(i);
+        for (int i = 0; i < h.knappLista.size(); i++) {
+            JButton kontrollKnapp = h.knappLista.get(i);
             JButton rättadListaKontrollknapp = rättadKnappLista.get(i);
 
             if (!kontrollKnapp.equals(rättadListaKontrollknapp)) {
@@ -35,11 +30,11 @@ public class ActionListner implements ActionListener {
         }
 
         if (vinst) {
-            vinstMeddelande.setText("Du har vunnit!");
-            southPanel.setBackground(Color.GREEN);
+            h.m.vinstMeddelande.setText("Du har vunnit!");
+            h.southPanel.setBackground(Color.GREEN);
         } else {
-            vinstMeddelande.setText("Du är inte klar, något stämmer inte");
-            southPanel.setBackground(Color.RED);
+            h.m.vinstMeddelande.setText("Du är inte klar, något stämmer inte");
+            h.southPanel.setBackground(Color.RED);
         }
     }
 }
